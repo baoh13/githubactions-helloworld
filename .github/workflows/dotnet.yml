@@ -38,6 +38,7 @@ jobs:
       with:
         image: baoh13/githubactions-helloworld
         tags: latest
+        directory: "GithubActionsHelloWorld"
         registry: docker.io        
         dockerfile: "GithubActionsHelloWorld/Dockerfile"
         username: "dzacu1a@gmail.com"
