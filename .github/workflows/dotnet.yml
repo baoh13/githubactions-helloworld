@@ -40,6 +40,6 @@ jobs:
         directory: "GithubActionsHelloWorld"
         registry: docker.io        
         dockerfile: "GithubActionsHelloWorld/Dockerfile"
-        username: "dzacu1a@gmail.com"
-        password: "Baoh010388"
+        username: ${{secrets.DOCKER_USERNAME}}
+        password: ${{SECRETS.DOCKER_PASSWORD}}
               
