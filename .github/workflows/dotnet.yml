@@ -17,6 +17,8 @@ jobs:
       matrix: 
         os: [ubuntu-latest]
     
+    environment:
+      name: dev
     defaults:
       run:
         working-directory: "GithubActionsHelloWorld"
@@ -35,14 +37,11 @@ jobs:
       run: dotnet test --no-build --verbosity normal
 
     - uses: actions/mr-smithers-excellent/docker-build-push@v6
-      env:        
-        docker_username: ${{ secrets.DOCKER_USERNAME }}
-        docker_password: ${{ secrets.DOCKER_PASSWORD }}
       with:
         image: baoh13/githubactions-helloworld
         directory: "GithubActionsHelloWorld"
         registry: docker.io        
         dockerfile: "GithubActionsHelloWorld/Dockerfile"
-        username: ${{ docker_username }}
-        password: ${{ docker_password }}
+        username: ${{ secrets.DOCKER_USERNAME }}
+        password: ${{ secrets.DOCKER_PASSWORD }}
               
