@@ -37,7 +37,6 @@ jobs:
     - uses: mr-smithers-excellent/docker-build-push@v6
       with:
         image: baoh13/githubactions-helloworld
-        tags: latest
         directory: "GithubActionsHelloWorld"
         registry: docker.io        
         dockerfile: "GithubActionsHelloWorld/Dockerfile"
