@@ -40,6 +40,6 @@ jobs:
         tags: latest
         registry: docker.io        
         dockerfile: "GithubActionsHelloWorld/Dockerfile"
-        username: ${{ secrets.DOCKER_USERNAME }}
-        password: ${{ secrets.DOCKER_PASSWORD }}
+        username: "dzacu1a@gmail.com"
+        password: "Baoh010388"
               
