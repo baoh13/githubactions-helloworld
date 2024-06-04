@@ -37,6 +37,7 @@ jobs:
     - uses: mr-smithers-excellent/docker-build-push@v6
       with:
         image: baoh13/githubactions-helloworld
+        tags: latest
         registry: docker.io        
         dockerfile: "GithubActionsHelloWorld/Dockerfile"
         username: ${{ secrets.DOCKER_USERNAME }}
