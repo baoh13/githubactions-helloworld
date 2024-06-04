@@ -1,4 +1,4 @@
-# This workflow will build a .NET project
+  # This workflow will build a .NET project
 # For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-net
 
 name: .NET
@@ -40,6 +40,6 @@ jobs:
         directory: "GithubActionsHelloWorld"
         registry: docker.io        
         dockerfile: "GithubActionsHelloWorld/Dockerfile"
-        username: ${{secrets.DOCKER_USERNAME}}
-        password: ${{SECRETS.DOCKER_PASSWORD}}
+        username: ${{ secrets.DOCKER_USERNAME }}
+        password: ${{ secrets.DOCKER_PASSWORD }}
               
