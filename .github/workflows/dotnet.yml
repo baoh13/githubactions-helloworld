@@ -38,7 +38,6 @@ jobs:
       with:
         image: baoh13/githubactions-helloworld
         registry: docker.io
-        dockerfile: "GithubActionsHelloWorld/Dockerfile"
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
               
